@@ -18,7 +18,7 @@ router.get("/", function(req, res) {
 
 router.post("/", function(req, res) {
   tasks.insertOne([
-  task
+  'task'
   ], [
     req.body.task
   ], function() {
