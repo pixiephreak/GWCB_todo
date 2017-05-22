@@ -17,9 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-  tasks.insertOne([
-  'task'
-  ], [
+  tasks.insertOne('task', [
     req.body.task
   ], function() {
     res.redirect("/");
