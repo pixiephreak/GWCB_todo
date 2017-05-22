@@ -12,8 +12,8 @@ var tasks = {
       cb(res);
     });
   },
-  insertOne: function(objColVals, col, val, cb) {
-    orm.insertOne("tasks", col, val, cb, function(res) {
+  insertOne: function( col, val, cb) {
+    orm.insertOne("tasks", col, val, function(res) {
       cb(res);
     });
   }
